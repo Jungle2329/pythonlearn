@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+</head>
+<body>
+{% if message %}
+<p style="color:red">{{message}}</p>
+{% endif %}
+<form action="/signin_result" , method="post">
+    <fieldset>
+        <legend>请登录</legend>
+        <p>用户名：<input name="username" placeholder="Username"></p>
+        <p>密码：<input name="password" placeholder="Password" type="password"></p>
+        <p>
+            <button type="submit">Sign In</button>
+        </p>
+    </fieldset>
+</form>
+</body>
+</html>

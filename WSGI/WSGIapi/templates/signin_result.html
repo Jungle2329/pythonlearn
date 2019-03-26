@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>signin_result</title>
+</head>
+<body>
+<!--使用判断-->
+{% if username == "zhangyi" and password == "692329" %}
+<div>Hello, {{username}}</div>
+<div>your's password: {{password}}</div>
+{% else %}
+<!--使用迭代器-->
+{% for i in range(10) %}
+<p>登录失败</p>
+{% endfor %}
+{% endif %}
+
+</body>
+</html>
